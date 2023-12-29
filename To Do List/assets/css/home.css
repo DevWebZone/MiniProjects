@@ -1,0 +1,150 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+.body-container{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+.body-container > *:not(:last-child){
+    border-bottom: solid 1px rgb(216, 211, 211);
+}
+#create-task{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#create-task input, label, select {
+    display:block;
+    text-align: left;
+    border: none;
+    color: gray;
+}
+.input-first{
+    
+    height: 10vh;
+    width: 100vw;
+    border-bottom: solid 1px rgb(216, 211, 211);
+    margin: 0;
+}
+.input-box{
+    
+    height: 10vh;
+    width: 49vw;
+    border-left: solid 1px rgb(216, 211, 211);
+    border-bottom: solid 1px rgb(216, 211, 211);
+}
+label{
+    font-weight: 600;
+}
+
+#description{
+    width: 50vw;
+    height: fit-content;
+    font-weight: small;
+}
+#description:focus{
+    outline: none;
+    
+    background-color: lightgray;
+   
+}
+#description:focus .input-first{
+    background-color: lightgray;
+}
+
+#button_box{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    height: 50%;
+    width: 15vw;
+    font-weight: 400;
+    font-size: x-large;
+    color: white;
+    margin: 2px;
+}
+#add-button{
+    background-color: rgb(73, 71, 71);
+    transition: all 0.5s ;
+    border: none;
+}
+#add-button:hover{
+    background-color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+#delete-button{
+    background-color: rgb(233, 42, 17);
+    transition: all 0.5s ;
+    border: none;
+    text-decoration: none;
+    text-align:center;
+    line-height: 10vh;
+}
+#delete-button:hover{
+    background-color: rgb(255, 30, 0);
+    cursor: pointer;
+}
+.list-container{
+    height: 14vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+#todo-list{
+    padding: 0;
+    margin: 0;
+}
+#todo-list > *:not(:last-child){
+    border-bottom: solid 1px rgb(216, 211, 211);
+    
+}
+.list-container input{
+    height: 15px;
+    width: 15px;
+    margin-top: 5vh;
+}
+.list-description{
+    margin-left: 15px;
+    margin-top: 5vh;
+    width: 80vw;
+    height: max-content;
+    text-align: left;
+    color: gray;
+    font-weight: 600;
+}
+.list-category{
+    margin-top: 3vh;
+    text-align: center;
+    padding-top: 2vh;
+    height: 30px;
+    width: 120px;
+    color: white;
+    font-weight: 300;
+    background-color: blueviolet;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 4px black;
+    font-size: large;
+}
+.list-date{
+    height: max-content;
+    font-size: small;
+    margin-top: -3vh;
+    margin-left: 35px;
+    color: gray;
+    font-weight: 300;
+    width: 20vw;
+    text-align: left;
+}
+
+#page-heading{
+    color: gray;
+    font-weight: 600;
+}
